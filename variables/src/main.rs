@@ -1,32 +1,39 @@
+struct Struct {
+    e: i32,
+}
+
+const MAX_POINTER: u32 = 100_000;
+
 fn main() {
-    /*
-    // 变量可变性
-    let mut x = 5;
-    println!("The value of x is: {}", x);
-    x = 6;
-    println!("The value of x is: {}", x);*/
+    // let mut x = 5;
+    // println!("x = {}", x);
+    // x = 3;
+    // println!("x = {}", x);
 
-    /*  // 使用下划线开头忽略未使用的变量
-    let _x = 5;
-    let _y = 1; */
+    // let _x = 5;
+    // let y = 3;
+    // println!("x = {}", _x);
 
-    /* // 变量解构
-    let (a, mut b): (bool, bool) = (false, true);
-    println!("a={:?},b={:?}", a, b);
+    // let (a, mut b): (bool, bool) = (true, false);
+    // println!("a = {}, b = {}", a, b);
+    // b = true;
+    // assert_eq!(a, b);
 
-    b = false;
-    assert_eq!(a, b) */
+    // let (a, b, c, d, e);
+    // (a, b) = (1, 2);
+    // [c, .., d, _] = [1, 2, 3, 4, 5];
+    // Struct { e, .. } = Struct { e: 5 };
+    // println!("a = {}, b = {}, c = {}, d = {}, e = {}", a, b, c, d, e);
 
-    // 结构式赋值
-    struct Struct {
-        e: i32,
-    }
+    // let x = 5;
+    // let x = x + 1;
+    // {
+    //     let x = x * 2;
+    //     println!("The value of x in the inner scope is: {}", x);
+    // }
+    // println!("The value of x is: {}", x);
 
-    let (a, b, c, d, e);
-    (a, b) = (1, 2);
-    // _ 代表匹配一个值，用来占位
-    [c, .., d, _] = [1, 2, 3, 4, 5];
-    Struct { e, .. } = Struct { e: 5 };
-
-    assert_eq!([1, 2, 1, 4, 5], [a, b, c, d, e]);
+    let space = "    ";
+    let space = space.len();
+    println!("space = {}", space);
 }
