@@ -33,9 +33,55 @@ fn main() {
     // let quotient = 56.7 / 32.2;
     // let remainder = 43 % 5;
 
-    let twenty = 20;
-    let twenty_one:i32 = 21;
+    /* let twenty = 20;
+    let twenty_one: i32 = 21;
     let twenty_two = 22i32;
-    
 
+    // 只有同样的类型，才能运算
+    let addition = twenty + twenty_one + twenty_two;
+    println!("{}", addition);
+
+    let forty_twos = [
+        42.0,
+        42f32,
+        42.0_f32,
+    ];
+
+    println!("{:.2}", forty_twos[0]); */
+
+    // for i in 1..=5 {
+    //     println!("{}", i);
+    // }
+
+    // for i in 'A'..='Z' {
+    //     println!("{}", i);
+    // }
+
+    // fn add_with_extra(x: i32, y: i32) -> i32 {
+    //     let x = x + 1; // 语句
+    //     let y = y + 5; // 语句
+    //     x + y // 表达式，表达式可以用作函数的返回值
+    // }
+    //     let y = {
+    //         let x = 3;
+    //         x + 1
+    //     };
+
+    // let x = plus_or_minus(5);
+    // println!("{}", x);
 }
+// fn ret_unit_type() {
+//     let x = 1;
+//     let y = if x % 2 == 1 { "odd" } else { "even" };
+// }
+
+// fn add(i:i32,j:i32)->i32{
+//     i+j
+// }
+
+// fn plus_or_minus(x: i32) -> i32 {
+//     if x > 5 {
+//         return x - 5;
+//     }
+//     x + 5
+// }
